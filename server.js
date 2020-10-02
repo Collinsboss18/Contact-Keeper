@@ -1,7 +1,19 @@
 const express = require('express'),
+    connectDB = require('./config/db');
           app = express();
 
+/** 
+ * @action Set server port 
+ * @param  PORT
+ */
 app.set('PORT', process.env.PORT || 5000);
+
+// @action Connect to Database */
+connectDB();
+
+// Init Middleware
+app.use(express.json({ extended: false }));
+
 app.get('/', (req, res) => {
     res.json({msg: 'Welcome'});
 });
