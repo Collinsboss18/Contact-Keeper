@@ -1,6 +1,7 @@
 const mongoose = require('mongoose'),
   config = require('config'),
-  db = config.get('mongoAtlasURI');
+  // db = config.get('mongoAtlasURI');
+  db = config.get('mongoLocalURI');
 
 const connectDB = async () => {
   try {
