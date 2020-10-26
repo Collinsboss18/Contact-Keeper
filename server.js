@@ -1,12 +1,9 @@
-const express = require('express'),
-  connectDB = require('./config/db'),
-  path = require('path'),
-  app = express();
+const express = require('express');
+const connectDB = require('./config/db');
+const path = require('path');
+const app = express();
 
-/**
- * @action Set server port
- * @param  PORT
- */
+// Set Server Port
 app.set('PORT', process.env.PORT || 5000);
 
 // @action Connect to Database */
