@@ -2,9 +2,9 @@
 node_modules/
 
 # Client DIR
-client/node_modules
+#client/node_modules
 # production
-client/build
+#client/build
 
 # misc
 .DS_Store
