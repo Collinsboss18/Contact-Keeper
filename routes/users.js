@@ -1,6 +1,11 @@
+/**
+ * @author Collins Charles
+ * @action Handles routes to '/api/users'
+ */
+
 const express = require('express');
 const router = express.Router();
-const { registerUser } = require('../controllers/userController')
+const { registerUser } = require('../controllers/userController');
 const { check } = require('express-validator');
 
 /**
@@ -9,13 +14,13 @@ const { check } = require('express-validator');
  * @access  Public
  */
 router.post(
-  '/',
-  [
-    check('name', 'Please add name').not().isEmpty(),
-    check('email', 'Please include a valid email').isEmail(),
-    check('password', 'Please enter a password with 6 or more characters').isLength({ min: 6 }),
-  ],
-  registerUser
+	'/',
+	[
+		check('name', 'Please add name').not().isEmpty(),
+		check('email', 'Please include a valid email').isEmail(),
+		check('password', 'Please enter a password with 6 or more characters').isLength({ min: 6 }),
+	],
+	registerUser
 );
 
 module.exports = router;

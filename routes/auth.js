@@ -1,3 +1,8 @@
+/**
+ * @author Collins Charles
+ * @action Handles routes to '/api/auth'
+ */
+
 const express = require('express');
 const router = express.Router();
 const auth = require('../middleware/auth');
