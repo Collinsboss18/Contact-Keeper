@@ -1,3 +1,8 @@
+/**
+ * @author Collins Charles (abadaikecollins@gmail.com)
+ * @action Handles actions for user contacts
+ */
+
 const User = require('../models/User');
 const Contact = require('../models/Contact');
 const { validationResult } = require('express-validator');

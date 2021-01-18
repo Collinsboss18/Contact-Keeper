@@ -1,5 +1,5 @@
 /**
- * @author Collins Charles
+ * @author Collins Charles (abadaikecollins@gmail.com)
  * @action Handles routes to '/api/contacts'
  */
 

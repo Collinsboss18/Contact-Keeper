@@ -1,3 +1,8 @@
+/**
+ * @author Collins Charles (abadaikecollins@gmail.com)
+ * @action
+ */
+
 const bcrypt = require('bcryptjs');
 const config = require('config');
 const jwt = require('jsonwebtoken');
