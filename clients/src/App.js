@@ -21,28 +21,28 @@ import './App.css';
 if (localStorage.token) setAuthToken(localStorage.token);
 
 const App = () => {
-  return (
-    <AuthState>
-      <ContactState>
-        <AlertState>
-          <Router>
-            <Fragment>
-              <Navbar />
-              <div className={'container'}>
-                <Alert />
-                <Switch>
-                  <Route exert path={'/login'} component={Login} />
-                  <Route exert path={'/register'} component={Register} />
-                  <Route exert path={'/about'} component={About} />
-                  <PrivateRoute exert path={'/'} component={Home} />
-                </Switch>
-              </div>
-            </Fragment>
-          </Router>
-        </AlertState>
-      </ContactState>
-    </AuthState>
-  );
+	return (
+		<AuthState>
+			<ContactState>
+				<AlertState>
+					<Router>
+						<Fragment>
+							<Navbar />
+							<div className={'container'}>
+								<Alert />
+								<Switch>
+									<Route exert path={'/login'} component={Login} />
+									<Route exert path={'/register'} component={Register} />
+									<Route exert path={'/about'} component={About} />
+									<PrivateRoute exert path={'/'} component={Home} />
+								</Switch>
+							</div>
+						</Fragment>
+					</Router>
+				</AlertState>
+			</ContactState>
+		</AuthState>
+	);
 };
 
 export default App;

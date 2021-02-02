@@ -1,5 +1,5 @@
 {
-    "mongoAtlasURI": "mongodb+srv://collins123:collins123@contactkeeper.euj2a.mongodb.net/contact?retryWrites=true&w=majority",
-    "mongoLocalURI": "mongodb://localhost:27017/contactkeeper",
-    "jwtSecret": "58a02cff5f9dce3e6a8f6db33b8c539939a2e4479fda993a113c254a86d8e3f4ad4e829b7fce9f61ff616f5bfcd26662ed9e2ccb91ec2099303e85f6b08bbae5"
+	"mongoAtlasURI": "mongodb+srv://collins123:collins123@contactkeeper.euj2a.mongodb.net/contact?retryWrites=true&w=majority",
+	"mongoLocalURI": "mongodb://127.0.0.1/contactkeeper",
+	"jwtSecret": "58a02cff5f9dce3e6a8f6db33b8c539939a2e4479fda993a113c254a86d8e3f4ad4e829b7fce9f61ff616f5bfcd26662ed9e2ccb91ec2099303e85f6b08bbae5"
 }
