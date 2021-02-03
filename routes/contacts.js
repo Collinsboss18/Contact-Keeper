@@ -12,6 +12,6 @@ const { check } = require('express-validator');
 router.get('/', auth, contactController.getAllContacts);
 router.post('/', [auth, [check('name', 'Name is required').not().isEmpty()]], contactController.addContact);
 router.put('/:id', auth, contactController.updateContact);
-router.delete('/:id', auth);
+router.delete('/:id', auth, contactController.deleteContact);
 
 module.exports = router;
