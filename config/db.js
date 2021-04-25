@@ -1,7 +1,8 @@
-const mongoose = require('mongoose'),
-	config = require('config'),
-	db = config.get('mongoAtlasURI');
-// db = config.get('mongoLocalURI');
+const mongoose = require('mongoose');
+const	config = require('config');
+const	db = config.get('mongoAtlasURI');
+// const db = config.get('mongoLocalURI');
+const log = require('bunyan').createLogger({ name: 'Contact Keeper' });
 
 const connectDB = async () => {
 	try {
@@ -11,9 +12,11 @@ const connectDB = async () => {
 			useUnifiedTopology: true,
 			useFindAndModify: false,
 		});
-		console.log('MongoDB Connected...');
+		// console.log('MongoDB Connected...');
+		log.info('Mongodb COnnected...')
 	} catch (err) {
-		console.error(err.message);
+		// console.error(err.message);
+		log.warn(err.message)
 		process.exit(1);
 	}
 };
